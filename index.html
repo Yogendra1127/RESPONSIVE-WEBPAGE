@@ -1,53 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interactive Web Page</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive webpage</title>
+  <link rel = "stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Video Section -->
-  <section class="video-section">
-    <video id="video" controls>
-      <source src="video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-    <button id="playButton">Play</button>
-  </section>
+  <div class="main-container">
+    <!--Header section-->
+    <section class="header">
+      <nav class="navbar">
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <div class="testimonial-slider">
-      <div class="slide">"Amazing service!" - Alex</div>
-      <div class="slide">"Highly recommend this!" - Jamie</div>
-      <div class="slide">"A great experience!" - Chris</div>
+        <img src="Images/content logo dark.png" alt="Figma Land" class="logo">
+        <img src="Images/desktop actions.png" alt="social-media" class="social-icons">
+      </nav>
+    
+    <div class="text-box">
+      <h1>The best products <br> starts with Figma.</h1>
+      <p>Most calendars are designed for teams. Slate is designed<br>for freelancer.</p>
     </div>
-    <div class="dots">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
+
+    <div class="action-content">
+      <div class="button-container">
+        <img src="Images/Action content.png" alt="Try For Free">
+      </div>
     </div>
   </section>
-
-  <!-- Contact Modal -->
-  <button id="contactBtn">Contact Us</button>
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-      </form>
+  
+  <!-- Features section -->
+  <section class="feature-section">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h2>Features</h2>
+        <p>Most calendar are designed for teams. Slate is designed for freelancers</p>
+      </div>
     </div>
+  </section>
   </div>
-
-  <!-- Google Maps -->
-  <div id="map"></div>
-
-  <script src="script.js"></script>
 </body>
 </html>
