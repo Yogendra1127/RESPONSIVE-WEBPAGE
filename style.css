@@ -5,7 +5,12 @@
   font-family: 'Inter' , Arial, sans-serif;
 }
 
-.main-container
+.main-container{
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Header section */
 .header{
   min-height: 100vh;
   width: 100%;
@@ -21,7 +26,7 @@
 .navbar{
   display: flex;
   padding: 2% 6%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
   height: 156px;
@@ -165,19 +170,45 @@
 }
 
 .feature-text h2 {
-  width: 216px;
-  height: 75px;
+  /* Layout */
+  width: 196px;
+  height: 55px;
+  
+  /* Typography */
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400; /* Changed from 700 to 400 per your request */
   font-size: 48px;
   line-height: 55px;
   letter-spacing: 0.2px;
-  color: #FFFFFF;
+  text-align: center;
+  color: #252B42; /* Updated color */
+  
+  /* Positioning */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  margin: 0;
+  margin: 0 auto; /* Centers the element */
+  
+  /* Responsive Behavior */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .features-text h2 {
+    width: auto; /* Flexible width on smaller screens */
+    min-width: 196px; /* Minimum width */
+    height: auto; /* Flexible height */
+    font-size: clamp(32px, 6vw, 48px); /* Fluid scaling */
+    padding: 0 10px; /* Prevents edge crowding */
+  }
+}
+
+@media (max-width: 480px) {
+  .features-text h2 {
+    font-size: 32px; /* Minimum readable size */
+    line-height: 1.2;
+  }
 }
 
 .feature-text p {
