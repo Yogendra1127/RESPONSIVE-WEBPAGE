@@ -579,7 +579,7 @@ section > p {
     max-width: 1100px;
     margin: 0 auto;
     gap: 80px;
-    background-color: #f7f7f7; /* Light grey background for this section */
+    background-color: white; /* Light grey background for this section */
     border-radius: 10px;
     padding: 60px 40px; /* Padding inside the section */
 }
@@ -802,6 +802,12 @@ section > p {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .pricing-card:hover {
     transform: translateY(-10px);
@@ -811,7 +817,7 @@ section > p {
     background-color: #2091f9;
     color: white;
     transform: translateY(-20px);
-    padding: 50px 30px;
+    padding: 60px 40px;
     box-shadow: 0 15px 40px rgba(32, 145, 249, 0.3); /* Specific shadow for standard */
 }
 .pricing-card.standard:hover {
@@ -828,12 +834,13 @@ section > p {
 }
 .pricing-card.standard .outline-btn {
     /* Standard might use a primary button, but if outline ensure contrast */
-    border-color: white;
-    color: white;
+    border-color: white !important;
+    color: #2091f9 !important;
+    border: 2px solid white !important;
 }
 .pricing-card.standard .outline-btn:hover {
-    background-color: white;
-    color: #2091f9;
+    background-color: #2091f9 !important;
+    color: white !important;
 }
 
 .pricing-card h3 {
