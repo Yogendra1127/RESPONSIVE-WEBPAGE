@@ -12,8 +12,7 @@
     </head>
 
     <body>
-
-        <!-- header section`-->
+        <!-- Header Section -->
         <header class="header">
             <nav class="navbar">
                 <ul class="nav-links">
@@ -27,7 +26,7 @@
                     <img
                         src="files/2.png"
                         alt="Figma Land Logo"
-                        style="height: 40px"
+                        class="logo-img"
                     />
                 </div>
                 <div class="social-icons">
@@ -35,8 +34,29 @@
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
+                <!-- Hamburger Menu Button -->
+                <button class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars icon-bars"></i>
+                    <i class="fas fa-times icon-times"></i>
+                </button>
             </nav>
         </header>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="mobile-social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
 
         <!-- Hero Section -->
         <section class="hero">
@@ -130,11 +150,12 @@
         <!-- Video Section -->
         <section class="video-section">
             <div class="video-container">
+                <!-- Optional: Add a poster image for the video -->
+                <!-- <img src="files/video-thumbnail.jpg" alt="Video Thumbnail" class="thumbnail"> -->
                 <div class="play-button">
                     <i class="fas fa-play"></i>
                 </div>
                 <video controls preload="metadata">
-                    <!-- Replace with your actual video source -->
                     <source src="./files/freelancing.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
@@ -167,8 +188,8 @@
                 <p>Subscribe to our Newsletter</p>
                 <p>Available exclusively on Figmaland</p>
                 <div class="subscribe-form">
-                    <input type="email" placeholder="Your Email" />
-                    <button class="btn primary-btn">Subscribe</button>
+                    <input type="email" placeholder="Your Email" required />
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
                 </div>
             </div>
         </section>
@@ -182,6 +203,7 @@
             </p>
 
             <div class="partner-logos">
+
                 <div class="partner-row">
                     <div class="partner-logo">
                         <img src="files/google.jpg" alt="Google" />
@@ -196,18 +218,20 @@
                         <img src="files/uber.jpg" alt="Uber" />
                     </div>
                 </div>
+                
                 <div class="partner-row">
+                    
+                    <div class="partner-logo">
+                        <img src="files/dropbox.jpg" alt="Amazon" />
+                    </div>
                     <div class="partner-logo">
                         <img src="files/google.jpg" alt="Google" />
                     </div>
                     <div class="partner-logo">
-                        <img src="files/amazon.jpg" alt="Amazon" />
-                    </div>
-                    <div class="partner-logo">
-                        <img src="files/microsoft.jpg" alt="Microsoft" />
-                    </div>
-                    <div class="partner-logo">
                         <img src="files/uber.jpg" alt="Uber" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="files/amazon.jpg" alt="Amazon" />
                     </div>
                 </div>
             </div>
@@ -232,7 +256,9 @@
                     </p>
                     <div class="testimonial-author">
                         <img src="files/avatar.jpg" alt="Author avatar" />
-                        <p>John Doe<br /><span>Designer</span></p>
+                        <div> <!-- Wrapped text in a div for better control if needed -->
+                            <p>John Doe<br /><span>Designer</span></p>
+                        </div>
                     </div>
                 </div>
 
@@ -248,7 +274,9 @@
                     </p>
                     <div class="testimonial-author">
                         <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Author avatar" />
-                        <p>Jane Smith<br /><span>Developer</span></p>
+                        <div>
+                            <p>Jane Smith<br /><span>Developer</span></p>
+                        </div>
                     </div>
                 </div>
 
@@ -264,7 +292,9 @@
                     </p>
                     <div class="testimonial-author">
                         <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Author avatar" />
-                        <p>Mark Lee<br /><span>Product Manager</span></p>
+                        <div>
+                            <p>Mark Lee<br /><span>Product Manager</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -350,12 +380,12 @@
             </p>
 
             <div class="contact-container">
-                <div class="contact-form">
-                    <h3>Contact Us</h3>
-                    <form id="contactForm">
-                        <input type="text" placeholder="Your Name" />
-                        <input type="email" placeholder="Your Email" />
-                        <textarea placeholder="Your Message"></textarea>
+                <div class="contact-form-wrapper"> <!-- Wrapper for form and its social icons -->
+                    <form class="contact-form-fields" id="contactForm">
+                        <h3>Contact Us</h3>
+                        <input type="text" placeholder="Your Name" required />
+                        <input type="email" placeholder="Your Email" required />
+                        <textarea placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn primary-btn">
                             Send
                         </button>
@@ -386,8 +416,8 @@
                     <div class="contact-map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30774829.266167983!2d60.9692356005802!3d19.683097683425462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1746982317902!5m2!1sen!2sin"
-                            width="600"
-                            height="450"
+                            width="100%" 
+                            height="250" 
                             style="border: 0"
                             allowfullscreen=""
                             loading="lazy"
@@ -434,7 +464,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-column">
+                <div class="footer-column footer-column-contact">
                     <div class="footer-social">
                         <div class="footer-social-item">
                             <i class="fas fa-map-marker-alt"></i>
