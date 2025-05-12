@@ -705,7 +705,7 @@ section > p {
     position: relative;
     min-height: 320px;
     margin-bottom: 30px;
-    background-color: #f7f7f7; /* Light background for slider area */
+    background-color: white; /* Light background for slider area */
     padding: 40px 30px;
     border-radius: 10px;
 }
@@ -721,12 +721,12 @@ section > p {
 .testimonial-slide > p {
     /* Testimonial text */
     color: #374754;
-    margin-bottom: 30px;
+    margin: 20px auto 30px auto;
     font-size: 18px;
     line-height: 1.7;
     max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    padding: 0 10px;
 }
 .testimonial-author {
     display: flex;
@@ -848,8 +848,27 @@ section > p {
     font-size: 14px;
     min-height: 40px; /* Ensure consistent height */
 }
+
+.pricing-card.free .price h2 {
+    color: black;
+}
+
+.pricing-card.free .price h2 span {
+    color: black; /* change $ to black as well */
+}
+
+
+.pricing-card.business .price h2 {
+    color: black;
+}
+
+.pricing-card.business .price h2 span {
+    color: black;
+}
+
+
 .price {
-    margin-bottom: 35px; /* Increased margin */
+    margin-bottom: 35px; 
 }
 .price h2 {
     font-size: 64px; /* Larger price */
@@ -1324,8 +1343,8 @@ section > p {
     }
     .price h2 {
         font-size: 50px;
+        color: #333;
     }
-
     .contact-form-wrapper {
         padding: 30px 20px;
     }
