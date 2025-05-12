@@ -1,52 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive webpage</title>
-  <link rel = "stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="main-container">
-    <!--Header section-->
-    <section class="header">
-      <nav class="navbar">
-        <div class="nav-links">
-          <ul>
-            <a href="#">Home</a>
-            <a href="#">Product</a>
-            <a href="#">Pricing</a>
-            <a href="#">About</a>
-            <a href="#">contact</a>
-          </ul>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Figma Land</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+    </head>
 
-        <img src="Images/content logo dark.png" alt="Figma Land" class="logo">
-        <img src="Images/desktop actions.png" alt="social-media" class="social-icons">
-      </nav>
-    
-    <div class="text-box">
-      <h1>The best products <br> starts with Figma.</h1>
-      <p>Most calendars are designed for teams. Slate is designed<br>for freelancer.</p>
-    </div>
+    <body>
 
-    <div class="action-content">
-      <div class="button-container">
-        <img src="Images/Action content.png" alt="Try For Free">
-      </div>
-    </div>
-  </section>
-  
-  <!-- Features section -->
-  <section class="feature-section">
-    <div class="feature-content">
-      <div class="feature-text">
-        <h2>Features</h2>
-        <p>Most calendar are designed for teams. Slate is designed for freelancers</p>
-      </div>
-    </div>
-  </section>
-  </div>
-</body>
+        <!-- header section`-->
+        <header class="header">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="logo">
+                    <img
+                        src="files/2.png"
+                        alt="Figma Land Logo"
+                        style="height: 40px"
+                    />
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>The best products<br />start with Figma</h1>
+                <p>
+                    Most calendars are designed for teams. Slate is designed<br />for
+                    freelancers
+                </p>
+                <button class="btn primary-btn">Try For Free</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Features</h2>
+            <p>
+                Most calendars are designed for teams.<br />Slate is designed
+                for freelancers
+            </p>
+
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div>
+                        <svg
+                            width="47"
+                            height="47"
+                            viewBox="0 0 47 47"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M14.6042 0.625C18.3117 0.625 21.8673 2.0978 24.4889 4.7194C27.1105 7.34101 28.5833 10.8967 28.5833 14.6042C28.5833 17.9846 27.3888 21.0854 25.3808 23.5H46.375V46.375H23.5V25.3808C21.0854 27.3888 17.9846 28.5833 14.6042 28.5833C10.8967 28.5833 7.34101 27.1105 4.7194 24.4889C2.0978 21.8673 0.625 18.3117 0.625 14.6042C0.625 10.8967 2.0978 7.34101 4.7194 4.7194C7.34101 2.0978 10.8967 0.625 14.6042 0.625Z"
+                                fill="#2091F9"
+                            />
+                        </svg>
+                    </div>
+                    <h3>OpenType features<br />Variable fonts</h3>
+                    <p>
+                        Slate helps you see how many more days you need to work
+                        to reach your financial goal.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon blue-circle">
+                        <svg
+                            width="45"
+                            height="42"
+                            viewBox="0 0 45 42"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M18.2498 41.65C22.4031 40.0167 21.4931 35.5134 19.3931 32.6667C17.3165 29.75 14.4465 27.7434 11.5531 25.8067C9.48872 24.5055 7.64548 22.8829 6.09313 21C5.43979 20.23 4.10979 18.8067 5.46313 18.5267C6.83979 18.2467 9.21979 19.6 10.4331 20.1134C12.5565 21 14.6565 22.0267 16.6165 23.24L18.9731 19.2734C15.3331 16.87 10.6665 14.7467 6.32646 14.1167C3.85313 13.7434 1.23979 14.2567 0.399793 16.94C-0.346873 19.25 0.843127 21.5834 2.19646 23.4034C5.39313 27.6734 10.3631 29.7267 14.0731 33.4134C14.8665 34.1834 15.8231 35.0934 16.2898 36.1667C16.7798 37.1934 16.6631 37.2634 15.5665 37.2634C12.6731 37.2634 9.05646 35 6.69979 33.5067L4.34313 37.4734C7.91313 39.6667 13.8865 43.0967 18.2498 41.65ZM44.1265 5.25004C44.6398 4.7367 44.6398 3.8967 44.1265 3.4067L41.0931 0.373369C40.8487 0.137831 40.5225 0.00622559 40.1831 0.00622559C39.8437 0.00622559 39.5175 0.137831 39.2731 0.373369L36.8931 2.75337L41.7465 7.6067L44.1265 5.25004ZM21.1665 18.48V23.3334H26.0198L40.3698 8.98337L35.5165 4.13004L21.1665 18.48Z"
+                                fill="#2091F9"
+                            />
+                        </svg>
+                    </div>
+                    <h3>Design with real data</h3>
+                    <p>
+                        Slate helps you see how many more days you need to work
+                        to reach your financial goal.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon blue-circle">
+                        <svg
+                            width="49"
+                            height="47"
+                            viewBox="0 0 49 47"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M47.638 4.76792L44.2321 1.36209C43.2917 0.37084 41.6396 0.37084 40.6484 1.36209L17.875 24.1354L24.8646 31.125L47.638 8.35167C48.6292 7.36042 48.6292 5.70834 47.638 4.76792ZM12.7917 28.5833C10.7694 28.5833 8.82998 29.3867 7.40002 30.8167C5.97005 32.2466 5.16671 34.1861 5.16671 36.2083C5.16671 39.5379 2.21837 41.2917 0.083374 41.2917C2.42171 44.3925 6.43754 46.375 10.25 46.375C12.9464 46.375 15.5323 45.3039 17.439 43.3973C19.3456 41.4906 20.4167 38.9047 20.4167 36.2083C20.4167 34.1861 19.6134 32.2466 18.1834 30.8167C16.7534 29.3867 14.814 28.5833 12.7917 28.5833Z"
+                                fill="#2091F9"
+                            />
+                        </svg>
+                    </div>
+                    <h3>Fastest way to<br />take action</h3>
+                    <p>
+                        Slate helps you see how many more days you need to work
+                        to reach your financial goal.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="video-container">
+                <div class="play-button">
+                    <i class="fas fa-play"></i>
+                </div>
+                <video controls preload="metadata">
+                    <!-- Replace with your actual video source -->
+                    <source src="./files/freelancing.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Organize Section -->
+        <section class="organize">
+            <div class="organize-content">
+                <h2>Fastest way to<br />organize</h2>
+                <p>
+                    Most calendars are designed for teams.<br />Slate is
+                    designed for freelancers
+                </p>
+                <button class="btn primary-btn">Try For Free</button>
+            </div>
+            <div class="organize-image">
+                <img src="files/lap.jpg" alt="Dashboard" />
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section class="subscribe">
+            <div class="subscribe-illustration">
+                <img src="files/subscribe-img.jpg" alt="Illustration" />
+            </div>
+            <div class="subscribe-content">
+                <h3>At your fingertips</h3>
+                <h2>Lightning fast<br />prototyping</h2>
+                <p>Subscribe to our Newsletter</p>
+                <p>Available exclusively on Figmaland</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Your Email" />
+                    <button class="btn primary-btn">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <h2>Partners</h2>
+            <p>
+                Most calendars are designed for teams.<br />Slate is designed
+                for freelancers
+            </p>
+
+            <div class="partner-logos">
+                <div class="partner-row">
+                    <div class="partner-logo">
+                        <img src="files/google.jpg" alt="Google" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="files/amazon.jpg" alt="Amazon" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="files/microsoft.jpg" alt="Microsoft" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="files/uber.jpg" alt="Uber" />
+                    </div>
+                </div>
+                <div class="partner-row">
+                    <div class="partner-logo">
+                        <img src="files/google.jpg" alt="Google" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="files/amazon.jpg" alt="Amazon" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="files/microsoft.jpg" alt="Microsoft" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="files/uber.jpg" alt="Uber" />
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn primary-btn">Try For Free</button>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>Testimonials</h2>
+
+            <div class="testimonial-slider">
+                <!-- Slide 1 -->
+                <div class="testimonial-slide active">
+                    <div class="testimonial-ibm">
+                        <img src="files/ibm.jpg" alt="IBM" />
+                    </div>
+                    <p>
+                        Most calendars are designed for teams. Slate is designed
+                        for freelancers<br />who want a simple way to plan their
+                        schedule.
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="files/avatar.jpg" alt="Author avatar" />
+                        <p>John Doe<br /><span>Designer</span></p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-ibm">
+                        <img src="files/ibm.jpg" alt="IBM" />
+                    </div>
+                    <p>
+                        Slate lets you focus on your freelance projects with
+                        clarity and ease.<br />
+                        A truly independent calendar experience.
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Author avatar" />
+                        <p>Jane Smith<br /><span>Developer</span></p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-ibm">
+                        <img src="files/ibm.jpg" alt="IBM" />
+                    </div>
+                    <p>
+                        I’ve tried them all — Slate just makes sense for how
+                        freelancers work.<br />
+                        Clean, simple, effective.
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Author avatar" />
+                        <p>Mark Lee<br /><span>Product Manager</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing">
+            <h2>Pricing</h2>
+            <p>
+                Most calendars are designed for teams.<br />Slate is designed
+                for freelancers
+            </p>
+
+            <div class="pricing-plans">
+                <div class="pricing-card free">
+                    <h3>FREE</h3>
+                    <p>Organize across all apps by hand</p>
+                    <div class="price">
+                        <h2>0<span>$</span></h2>
+                        <p>Per Month</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <button class="btn outline-btn">Order Now</button>
+                </div>
+
+                <div class="pricing-card standard">
+                    <h3>STANDARD</h3>
+                    <p>Organize across all apps by hand</p>
+                    <div class="price">
+                        <h2>10<span>$</span></h2>
+                        <p>Per Month</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <button class="btn primary-btn">Order Now</button>
+                </div>
+
+                <div class="pricing-card business">
+                    <h3>BUSINESS</h3>
+                    <p>Organize across all apps by hand</p>
+                    <div class="price">
+                        <h2>99<span>$</span></h2>
+                        <p>Per Month</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <button class="btn outline-btn">Order Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Most calendars are designed for teams.<br />Slate is designed
+                for freelancers
+            </p>
+
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Contact Us</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" />
+                        <input type="email" placeholder="Your Email" />
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn primary-btn">
+                            Send
+                        </button>
+                    </form>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>
+                            6386 Spring St undefined Anchorage,<br />Georgia
+                            12473 United States
+                        </p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(843) 555-0130</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>willie.jennings@example.com</p>
+                    </div>
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30774829.266167983!2d60.9692356005802!3d19.683097683425462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1746982317902!5m2!1sen!2sin"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Tomothy</h3>
+                    <ul>
+                        <li><a href="#">Eleanor Edwards</a></li>
+                        <li><a href="#">Ted Robertson</a></li>
+                        <li><a href="#">Annette Russell</a></li>
+                        <li><a href="#">Jennie McInnis</a></li>
+                        <li><a href="#">Gloria Richards</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Jane Black</h3>
+                    <ul>
+                        <li><a href="#">Philip Jones</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Colleen Russell</a></li>
+                        <li><a href="#">Marvin Hawkins</a></li>
+                        <li><a href="#">Bruce Simmmons</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <div class="footer-social">
+                        <div class="footer-social-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>7480 Mockingbird Hill undefined</p>
+                        </div>
+                        <div class="footer-social-item">
+                            <i class="fas fa-phone"></i>
+                            <p>(239) 555-0108</p>
+                        </div>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
