@@ -550,12 +550,13 @@ section > p {
     max-width: 480px;
 }
 .organize-content h2 {
+    color: #252B42;
     font-size: 40px; /* Slightly larger heading */
     margin-bottom: 25px;
     text-align: left; /* Align left for desktop */
 }
 .organize-content p {
-    color: #5c5c5c;
+    color: #374754;
     margin-bottom: 40px;
     text-align: left; /* Align left for desktop */
     font-size: 18px;
@@ -594,9 +595,9 @@ section > p {
     flex: 1;
     max-width: 450px;
 }
-.subscribe-content h3 {
+.subscribe-content h5 {
     /* "At your Fingertips" */
-    color: #2091f9;
+    color: #252b42;
     margin-bottom: 10px;
     font-weight: 600;
     font-size: 16px;
@@ -605,6 +606,7 @@ section > p {
 }
 .subscribe-content h2 {
     /* "Lightning fast..." */
+    color: #252B42;
     font-size: 40px;
     margin-bottom: 20px;
     text-align: left; /* Align left */
@@ -622,7 +624,7 @@ section > p {
 }
 .subscribe-content p:nth-of-type(2) {
     /* "Available exclusively..." */
-    color: #5c5c5c;
+    color: #374754;
     margin-bottom: 30px;
     font-size: 15px;
 }
